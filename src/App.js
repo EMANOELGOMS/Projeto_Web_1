@@ -12,12 +12,12 @@ const App = () => {
   const buscarAtletas = async () => {
     try {
       const response = await axios.get(
-        `https://api-basketball.p.rapidapi.com/timezone?q=${nomeAtleta}`,
+        `https://api-football-v1.p.rapidapi.com/v3/timezone=${nomeAtleta}`,
         {
           headers: {
             
-            'X-RapidAPI-Host': process.env.REACT_APP_RAPIDAPI_HOST,
-            'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
+            'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com',
+            'X-RapidAPI-Key': '2345b4b4a9mshb198b5fa5aaa695p1301ccjsna71208e5d008',
           },
         }
       );
