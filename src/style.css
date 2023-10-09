@@ -1,0 +1,139 @@
+/* Definições gerais para a página */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2; /* Cor de fundo */
+  text-align: center; /* Centralizar o texto */
+}
+
+/* Estilo para o formulário */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0;
+}
+
+/* Estilo para a entrada de texto */
+.barraPesquisa {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 300px;
+}
+
+/* Estilo para o botão de pesquisa */
+.botao {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #0066cc;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background-color: #0055b3;
+}
+
+.botao:active {
+  background-color: #00224b;
+}
+
+
+/* Estilo para o widget de jogos de futebol */
+#wg-api-football-games {
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.nomeJogador {
+  color: #0066cc;
+}
+
+/* Estilo para a lista de pesquisas */
+.pesquisas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pesquisas li {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.pesquisas li:hover {
+  transform: translateY(-5px);
+}
+
+.pesquisas li:active {
+  transform: translateY(0);
+}
+
+.player-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 10px;
+  display: inline-block; /* Alterado para display inline-block */
+  width: calc(20% - 20px); /* Define a largura dos elementos para ocupar 20% do espaço disponível */
+  max-width: calc(20% - 20px); /* Define a largura máxima dos elementos como 20% do espaço disponível */
+  box-sizing: border-box; /* Considerar padding e borda dentro da largura */
+  vertical-align: top; /* Alinhar os elementos ao topo */
+}
+
+.player-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.player-card .nomeJogador {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.player-card p {
+  margin-bottom: 8px;
+}
+
+.player-card img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.player-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.player-card {
+  flex-basis: calc(20% - 20px);
+  margin-bottom: 20px;
+}
+
+
+/* Estilo para o conteúdo do jogador ou equipe */
+.conteudo {
+  text-align: left;
+}
+
