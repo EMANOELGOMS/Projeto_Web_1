@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Aplicação Projeto Web 1</h1>
+      <h1>Busca de Jogadores</h1>
       <SearchBar onSearch={handleSearch} onClear={clearSearch} />
       {showPlayerInfo && <GetPlayerInfo searchQuery={searchQuery} onAdicionarFavorito={adicionarFavorito}/>}
       <hr></hr>
