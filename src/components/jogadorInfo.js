@@ -20,7 +20,9 @@ const GetPlayerInfo = ({ searchQuery, onAdicionarFavorito }) => {
           qtdGolsMarcados: player.player_goals,
           posicao: player.player_type
         }));
+        setPlayers([])
         setPlayers(filteredPlayers);
+
       } catch (error) {
         console.error('Error fetching player data:', error);
       }
@@ -29,9 +31,12 @@ const GetPlayerInfo = ({ searchQuery, onAdicionarFavorito }) => {
     if (searchQuery) {
       fetchData();
     } else {
+
       setPlayers([]);
     }
+
   }, [searchQuery]);
+
 
   return (
     <div className="player-info">
