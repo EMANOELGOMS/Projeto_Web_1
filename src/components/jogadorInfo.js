@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const GetPlayerInfo = ({ searchQuery, onAdicionarFavorito }) => {
   const [players, setPlayers] = useState([]);
-  const [favoritos, setFavoritos] = useState([]);
+  //const [favoritos, setFavoritos] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
